@@ -10,7 +10,7 @@ class PortfoliosController < ApplicationController
 	def create
     @portfolio_item = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
 
-    respond_to do |format|
+		respond_to do |format|
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: "Portfolio created." }
       else
@@ -27,11 +27,15 @@ class PortfoliosController < ApplicationController
 		@portfolio_item = Portfolio.find(params[:id])
 
 		respond_to do |format|
-      if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
-        format.html { redirect_to portfolios_path, notice: "Porfolio updated." }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-      end
+			if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+				format.html { redirect_to portfolios_path, notice: "Porfolio updated." }
+			else
+				format.html { render :edit, status: :unprocessable_entity }
+			end
     end
+	end
+
+	def show
+		@portfolio_item = Portfolio.find(params[:id])
 	end
 end
