@@ -8,8 +8,10 @@ require("turbolinks").start()
 require("@rails/activestorage").start() 
 require("channels") 
  
-import 'jquery' 
-import 'bootstrap' 
+//= require jquery
+//= require jquery-ui
+//= require jquery_ujs
+//= require_tree .
  
 document.addEventListener('turbolink:load', () => { 
     $('[data-toggle="tooltip"]').tooltip() 
