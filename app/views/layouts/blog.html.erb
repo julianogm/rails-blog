@@ -18,19 +18,18 @@
     <!-- START OF HEADER -->
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The Bootstrap</h1>
+        <h1 class="blog-title">My Blog</h1>
         <p class= "lead blog-description">Some description.</p>
+        <%= link_to 'Write a new blog', new_blog_path if logged_in?(:site_admin) %>
       </div>
     </div>
     <!-- END OF HEADER -->
 
-    <!-- START OF CONTAINER ROW -->
     <div class="container">
       <div class="row">
-    <!-- END OF CONTAINER ROW -->
         <%= yield %>
 
-    <!-- START OF SIDEBAR -->
+        <!-- START OF SIDEBAR -->
         <div class="col-md-4">
           <div class="position-sticky" style="top: 2rem;">
             <div class="p-4 mb-3 bg-light rounded">
@@ -69,17 +68,16 @@
         <!-- END OF SIDEBAR -->
         <!-- START OF FOOTER -->
 
-        <footer class="blog-footer">
-          <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
+      </div>
+      <footer class="blog-footer">
+        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+          <a href="#">Back to top</a>
+        </p>
+      </footer>
         <!-- END OF FOOTER -->
 
-        <%= render "shared/nav", location: 'bottom' %>
-        <%= source_helper("blog") %>
-      </div>
+      <%= source_helper("blog") %>
     </div>
   </body>
 </html>
