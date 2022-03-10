@@ -13,6 +13,8 @@ require("channels")
 //= require jquery_ujs
 //= require_tree .
  
+import "../js/bootstrap_js_files"
+
 document.addEventListener('turbolink:load', () => { 
     $('[data-toggle="tooltip"]').tooltip() 
     $('[data-toggle="popover"]').popover() 
