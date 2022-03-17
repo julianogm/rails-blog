@@ -11,6 +11,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import '../js/portfolios'
+
 $(function(){
   $('.sortable').sortable();
 });
