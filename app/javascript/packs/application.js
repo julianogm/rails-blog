@@ -11,8 +11,5 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
+import '../js/bootstrap_js_files'
 import '../js/portfolios'
-
-$(function(){
-  $('.sortable').sortable();
-});
