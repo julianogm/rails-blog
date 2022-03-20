@@ -7,8 +7,9 @@ require("@rails/ujs").start()
 require("jquery")
 require("jquery-ui")
 require("@nathanvda/cocoon")
-require("turbolinks").start()
 require("@rails/activestorage").start()
+require("gritter/js/jquery.gritter.js")
+require("turbolinks").start()
 require("channels")
 
 import '../js/bootstrap_js_files'

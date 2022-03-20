@@ -1,4 +1,6 @@
-@import "bootstrap/scss/bootstrap" ; 
+@import "bootstrap/scss/bootstrap" ;
+@import "gritter";
+
 /*
  * Globals
  */
@@ -150,4 +152,11 @@ body {
 
 .app-footer {
   color: white;
+}
+
+.custom-gritter {
+  background-color: black;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid white;
 }

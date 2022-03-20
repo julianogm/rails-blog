@@ -1,5 +1,5 @@
-@import "bootstrap/scss/bootstrap" ; 
-
+@import "bootstrap/scss/bootstrap" ;
+@import "gritter";
 
 .jumbotron {
     padding-top: 3rem;
@@ -34,9 +34,16 @@ footer {
 footer p {
     margin-bottom: .25rem;
 }
-  
+
 /* Custom Styles */
 
 .portfolio-container {
     padding-top: 30px;
+}
+
+.custom-gritter {
+  background-color: black;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid white;
 }
