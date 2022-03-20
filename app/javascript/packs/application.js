@@ -6,7 +6,7 @@
 require("@rails/ujs").start()
 require("jquery")
 require("jquery-ui")
-
+require("@nathanvda/cocoon")
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
