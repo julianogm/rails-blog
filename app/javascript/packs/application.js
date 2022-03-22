@@ -4,13 +4,13 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-require("jquery")
 require("jquery-ui")
 require("@nathanvda/cocoon")
 require("@rails/activestorage").start()
 require("gritter/js/jquery.gritter.js")
 require("turbolinks").start()
 require("channels")
+require('@rails/actiontext');
 
 import '../js/bootstrap_js_files'
 import '../js/portfolios'
