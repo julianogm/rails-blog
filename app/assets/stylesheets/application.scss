@@ -160,3 +160,16 @@ body {
   text-align: center;
   border: 1px solid white;
 }
+
+.tech-news {
+  color: black;
+  margin: 10px;
+}
+
+.tech-news a {
+  color: crimson;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
