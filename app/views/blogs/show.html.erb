@@ -9,8 +9,8 @@
     <span class="breadcrumb-item active"><%= @blog.title %></span>
 
     <span class="ms-auto">
-      <%= link_to "Edit", edit_blog_path(@blog) if logged_in?(:site_admin) %>
-      <%= link_to "Delete", @blog, method: :delete, data: { confirm: 'Are you sure? '} if logged_in?(:site_admin) %>
+      <%= link_to fa_icon('pencil'), edit_blog_path(@blog), class: 'me-2' if logged_in?(:site_admin) %>
+      <%= link_to fa_icon('trash'), @blog, method: :delete, data: { confirm: 'Are you sure? '}, class: 'me-2' if logged_in?(:site_admin) %>
     </span>
   </nav>
 
