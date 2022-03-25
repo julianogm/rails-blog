@@ -3,7 +3,7 @@ class BlogsController < ApplicationController
   layout "blog"
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
 
-  # GET /blogs or /blogs.json
+  # GET /blogs
   def index
     if logged_in?(:site_admin)
       @blogs = Blog.recent.page(params[:page]).per(5)
@@ -13,13 +13,16 @@ class BlogsController < ApplicationController
     @page_title = "My Portfolio Blog"
   end
 
-  # GET /blogs/1 or /blogs/1.json
+  # GET /blogs/1
   def show
-    @blog = Blog.includes(:comments).friendly.find(params[:id])
-    @comment = Comment.new
-
-    @page_title = @blog.title
-    @seo_keywords = @blog.body
+    if logged_in?(:site_admin) || @blog.published?
+      @blog = Blog.includes(:comments).friendly.find(params[:id])
+      @comment = Comment.new
+      @seo_keywords = @blog.body
+      @page_title = @blog.title
+    else
+      redirect_to blogs_path, notice: "Not authorized"
+    end
   end
 
   # GET /blogs/new
