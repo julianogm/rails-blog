@@ -1,11 +1,9 @@
-<div class="col">
+<div class="col-md-4">
   <div class="card shadow-sm" data-id="<%= portfolio_item.id %>">
-    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb') %>
-    <div class="card-body">
-      <p class="card-text">
+    <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width="100%" %>
+    <p class="card-body">
         <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span>
         <%= portfolio_item.subtitle %>
-      </p>
-    </div>
+    </p>
   </div>
 </div>
