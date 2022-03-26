@@ -1,8 +1,19 @@
-<div class="container">
-    <div class="bg-dark">
-        <nav class="nav-scroller d-flex justify-content-center">       
-            <%= nav_helper 'nav-link link-light', 'span' %>
-            <%= login_helper 'nav-link' %>
-        </nav>
+<nav class="navbar navbar-expand-md navbar-light bg-primary bg-opacity-10 blog-nav">
+  <div class="container flex">
+    <%= link_to root_path, class: 'navbar-brand' do %>
+      <%= fa_icon 'play-circle-o' %>
+      Juliano Marques
+    <% end %>
+
+    <button type="button" class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav ms-auto">
+        <%= nav_helper 'nav-link', 'li' %>
+        <%= login_helper 'nav-link' %>
+      </ul>
     </div>
-</div>
+  </div>
+</nav>
