@@ -1,11 +1,26 @@
 <div class="app-card-container">
   <div class="card">
-    <h1>About Me</h1>
+    <h3>About Me</h3>
     <hr>
 
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag "profile.jpg", width:"100%", alt:"bonobo" %>
+        <%= image_tag "profile.jpg", width:"90%", class: 'img-thumbnail mx-auto d-block' %>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <%= skill.title %>
+            <div class="progress" style="height: 10px;">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                aria-valuenow="<%= skill.percent_utilized %>"
+                aria-valuemax="100"
+                style="width: <%= skill.percent_utilized %>%"
+              ></div>
+
+            </div>
+          <% end %>
+        </div>
       </div>
 
       <div class="col-md-8">
