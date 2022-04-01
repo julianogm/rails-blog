@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-md navbar-light bg-primary bg-opacity-10 blog-nav">
+<nav class="navbar navbar-expand-md blog-nav">
   <div class="container flex">
-    <%= link_to root_path, class: 'navbar-brand' do %>
+    <%= link_to root_path, class: 'navbar-brand text-white' do %>
       <%= fa_icon 'play-circle-o' %>
       Juliano Marques
     <% end %>
@@ -11,8 +11,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav navbar-nav ms-auto">
-        <%= nav_helper 'nav-link', 'li' %>
-        <%= login_helper 'nav-link' %>
+        <%= nav_helper 'nav-link text-white', 'li' %>
+        <%= login_helper 'nav-link text-white' %>
       </ul>
     </div>
   </div>

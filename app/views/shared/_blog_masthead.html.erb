@@ -1,12 +1,14 @@
 <div class="blog-header">
   <div class="container">
     <h1 class="blog-title">My Blog</h1>
-    <p class= "lead blog-description">Some description.</p>
+    <p class="lead blog-description">Some description.</p>
     <span>
-      <%= link_to 'Write a New Blog', new_blog_path, class: "badge bg-primary text-light" if logged_in?(:site_admin) %>
+      <%= link_to 'Write a New Blog', new_blog_path, class: "btn btn-primary btn-sm" if logged_in?(:site_admin) %>
     </span>
-    <span>
-      <%= link_to 'Topics', topics_path, class: "badge bg-primary text-light" %>
-    </span>
+    <!--
+      <span>
+        <%= link_to 'Topics', topics_path, class: "badge bg-primary text-light" %>
+      </span>
+    -->
   </div>
 </div>
