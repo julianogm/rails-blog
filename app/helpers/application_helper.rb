@@ -1,8 +1,8 @@
 module ApplicationHelper
-  def login_helper style = ''
+  def login_helper style = '', separador = ' '
     if current_user.is_a?(GuestUser)
       (link_to "Login", new_user_session_path, class: style) +
-      " ".html_safe +
+      separador.html_safe +
       (link_to "Register", new_user_registration_path, class: style)
     else
       link_to("Logout", destroy_user_session_path, method: :delete, class: style)
@@ -23,7 +23,7 @@ module ApplicationHelper
   def nav_items
     [
       { url: root_path, title: 'Home' } ,
-      { url: about_path, title: 'About' } ,
+      { url: about_path, title: 'About Me' } ,
       { url: contact_path, title: 'Contact' } ,
       { url: blogs_path, title: 'Blogs' } ,
       { url: portfolios_path, title: 'Portfolio' } ,

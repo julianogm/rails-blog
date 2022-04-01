@@ -9,7 +9,12 @@
 a,
 a:focus,
 a:hover {
+  text-decoration: none;
   color: #fff;
+}
+
+span {
+  text-decoration: nome;
 }
 
 /* Custom default button */
@@ -78,6 +83,10 @@ body {
   border-bottom-color: #fff;
 }
 
+.nav-masthead span{
+  margin-right: 20px;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
@@ -111,12 +120,12 @@ body {
  * Custom styles
  */
 .card-body {
-  color: black;
+  color: rgb(32, 32, 32);
   text-align: left;
 }
 
 .auth-links a {
-  color: black;
+  color: rgb(32, 32, 32);
   text-decoration: none;
 }
 
@@ -128,11 +137,6 @@ body {
    width: 22rem;
    margin: 0 auto;
    float: nome;
-}
-
-.app-nav span {
-  margin-left: 5px;
-  margin-right: 25px;
 }
 
 #background {
@@ -162,16 +166,12 @@ body {
 }
 
 .tech-news {
-  color: black;
-  margin: 10px;
+  color: rgb(37, 37, 37);
+  margin-bottom: 8px;
 }
 
 .tech-news a {
   color: crimson;
-}
-
-.tech-news > .card {
-  padding: 30px;
 }
 
 .app-card-container {
@@ -180,5 +180,5 @@ body {
 }
 
 .app-card-container > .card{
-  padding: 15px;
+  padding: 25px;
 }

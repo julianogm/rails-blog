@@ -21,13 +21,13 @@
           </div>
         <% end %>
 
-        <div class="form-group">
+        <div class="form-group d-grid mt-1">
           <%= f.submit "Log in", class: 'btn btn-primary' %>
         </div>
+        <div class="auth-links mt-2">
+          <%= render "devise/shared/links" %>
+        </div>
       <% end %>
-      <div class="auth-links">
-        <%= render "devise/shared/links" %>
-      </div>
     </div>
   </div>
 </div>
