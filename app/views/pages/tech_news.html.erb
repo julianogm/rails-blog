@@ -1,10 +1,10 @@
 <main role="main" class="inner cover">
-  <h1 class="py-2">Dev News</h1>
+  <h2 class="py-2">Dev News</h2>
 
   <div class="row">
     <% @tweets.each do |tweet| %>
       <div class="col-md-6">
-        <div class="tech-news card py-3 px-1">
+        <div class="tech-news card-transparent text-white py-3 px-1 border rounded">
           <%= twitter_parser(tweet) %>
         </div>
       </div>
