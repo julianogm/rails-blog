@@ -1,0 +1,13 @@
+pt-BR:
+  navbar:
+    home:      "Início"
+    about_me:  "Sobre"
+    contact:   "Contato"
+    blogs:     "Blogs"
+    portfolio: "Portfólio"
+    tech_news: "Novidades"
+    login:     "Entrar"
+    register:  "Registrar-se"
+    logout:    "Sair"
+  footer:
+    copyright:  "Todos os direitos reservados"

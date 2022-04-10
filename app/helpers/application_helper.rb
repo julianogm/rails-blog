@@ -5,16 +5,16 @@ module ApplicationHelper
       separador.html_safe +
       (link_to t('navbar.register'), new_user_registration_path, class: style)
     else
-      link_to("Logout", destroy_user_session_path, method: :delete, class: style)
+      link_to t('navbar.logout'), destroy_user_session_path, method: :delete, class: style
     end
   end
 
   def languages_helper
-    "<a href='?locale=en'>
-      <span class='flag-icon flag-icon-us'></span>
-    </a>
-    <a href='?locale=pt-BR'>
+    "<a href='?locale=pt-BR'>
       <span class='flag-icon flag-icon-br'></span>
+    </a>
+    <a href='?locale=en'>
+      <span class='flag-icon flag-icon-us'></span>
     </a>".html_safe
   end
 
@@ -26,7 +26,7 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright('Juliano Marques', 'All rights reserved')
+    DevcampViewTool::Renderer.copyright('Juliano Marques', t('footer.copyright'))
   end
 
   def nav_items

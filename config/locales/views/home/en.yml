@@ -30,17 +30,6 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  navbar:
-    home:       Home
-    about_me:   About Me
-    contact:    Contact
-    blogs:      Blogs
-    portfolio:  Portfolio
-    tech_news:  Tech News
-    login:      Login
-    register:   Register
-    logout:     Logout
-
   home:
     title:         "Greetings"
     description:   "Description"

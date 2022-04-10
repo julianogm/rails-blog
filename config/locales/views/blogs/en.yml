@@ -1,0 +1,16 @@
+en:
+  blogs:
+    title:       "My Blog"
+    new:         "Write new Blog"
+    description: "Blog Description"
+    blog_about:
+      title:       "About Blog"
+      description: "Customize this section to tell your visitors a little bit about your blogs"
+    topics:      "Topics"
+    social_medias: "My social networks"
+    footer:       "Back to Top"
+  blog:
+    published:  "Published %{days} ago"
+  comment:
+    published:  "Posted %{days} ago"
+    post:       "Post Comment"

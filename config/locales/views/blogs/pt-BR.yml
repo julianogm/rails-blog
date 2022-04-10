@@ -1,0 +1,16 @@
+pt-BR:
+  blogs:
+    title:       "Meu blog"
+    new:         "Escrever novo"
+    description: "Descrição do blog"
+    blog_about:
+      title:       "Sobre o Blog"
+      description: "Customize essa seção ao seu gosto"
+    topics:      "Tópicos"
+    social_medias: "Minhas redes sociais"
+    footer:       "Voltar ao Topo"
+  blog:
+    published:  "Publicado há %{days}"
+  comment:
+    published:  "Publicado há %{days}"
+    post:       "Enviar"
