@@ -1,0 +1,19 @@
+pt-BR:
+  navbar:
+    home:      "Início"
+    about_me:  "Sobre"
+    contact:   "Contato"
+    blogs:     "Blogs"
+    portfolio: "Portfólio"
+    tech_news: "Novidades"
+    login:     "Entrar"
+    register:  "Registrar-se"
+    logout:    "Sair"
+
+  home:
+    title:       "Saudacoes"
+    description: "Breve descricao"
+    about_me:    "Sobre Mim"
+    contact:     "Entre em Contato"
+    dev_news:
+      title:    "Novidades Dev"

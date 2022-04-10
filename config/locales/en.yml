@@ -30,14 +30,21 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  inicio:       "Home"
-  sobre_link:   "About Me"
-  titulo:       "Title Text"
-  sobre_texto:  "Description"
-  contato:      "Contact"
-  blogs:        "Blogs"
-  portfolio:    "Portfolio"
-  noticias:     "Tech News"
-  entrar:       "Login"
-  registrar:    "Register"
-  sair:         "Logout"
+  navbar:
+    home:       Home
+    about_me:   About Me
+    contact:    Contact
+    blogs:      Blogs
+    portfolio:  Portfolio
+    tech_news:  Tech News
+    login:      Login
+    register:   Register
+    logout:     Logout
+
+  home:
+    title:       "Greetings"
+    description: "Description"
+    about_me:    "About Me"
+    contact:     "Contact Me"
+    dev_news:
+      title:    "Tech News"
