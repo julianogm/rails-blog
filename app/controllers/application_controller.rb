@@ -4,13 +4,10 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
   include DefaultPageContentConcern
 
-  around_action :switch_locale
+  before_action :set_locale
 
-  def switch_locale(&action)
-    I18n.with_locale(params[:locale] || I18n.default_locale, &action)
-  end
-
-  def default_url_options
-    { locale: I18n.locale }
+  def set_locale
+    session[:locale] = params[:locale] if params[:locale].present?
+    I18n.locale = session[:locale] || I18n.default_locale
   end
 end

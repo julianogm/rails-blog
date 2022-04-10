@@ -36,7 +36,7 @@ module RailsBlog
     config.generators.system_tests = nil
 
     config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
-    config.i18n.available_locales = [:en, :pt]
-    config.i18n.fallbacks = [:en, :pt]
+    config.i18n.available_locales = [:en, 'pt-BR']
+    config.i18n.fallbacks = [:en, 'pt-BR']
   end
 end
