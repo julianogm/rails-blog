@@ -1,9 +1,9 @@
 module ApplicationHelper
   def login_helper style = '', separador = ' '
     if current_user.is_a?(GuestUser)
-      (link_to "Login", new_user_session_path, class: style) +
+      (link_to t(:entrar), new_user_session_path, class: style) +
       separador.html_safe +
-      (link_to "Register", new_user_registration_path, class: style)
+      (link_to t(:registrar), new_user_registration_path, class: style)
     else
       link_to("Logout", destroy_user_session_path, method: :delete, class: style)
     end
@@ -22,12 +22,12 @@ module ApplicationHelper
 
   def nav_items
     [
-      { url: root_path, title: 'Home' } ,
-      { url: about_path, title: 'About Me' } ,
-      { url: contact_path, title: 'Contact' } ,
-      { url: blogs_path, title: 'Blogs' } ,
-      { url: portfolios_path, title: 'Portfolio' } ,
-      { url: tech_news_path, title: 'Tech News' }
+      { url: root_path, title: t(:inicio) } ,
+      { url: about_path, title: t(:sobre_link) } ,
+      { url: contact_path, title: t(:contato) } ,
+      { url: blogs_path, title: t(:blogs) } ,
+      { url: portfolios_path, title: t(:portfolio) } ,
+      { url: tech_news_path, title: t(:noticias) }
     ]
   end
 
