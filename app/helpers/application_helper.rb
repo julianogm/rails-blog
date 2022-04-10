@@ -1,12 +1,21 @@
 module ApplicationHelper
   def login_helper style = '', separador = ' '
     if current_user.is_a?(GuestUser)
-      (link_to t(:entrar), new_user_session_path, class: style) +
+      (link_to t('navbar.login'), new_user_session_path, class: style) +
       separador.html_safe +
-      (link_to t(:registrar), new_user_registration_path, class: style)
+      (link_to t('navbar.register'), new_user_registration_path, class: style)
     else
       link_to("Logout", destroy_user_session_path, method: :delete, class: style)
     end
+  end
+
+  def languages_helper
+    "<a href='?locale=en'>
+      <span class='flag-icon flag-icon-us'></span>
+    </a>
+    <a href='?locale=pt-BR'>
+      <span class='flag-icon flag-icon-br'></span>
+    </a>".html_safe
   end
 
   def source_helper(styles)
@@ -22,12 +31,12 @@ module ApplicationHelper
 
   def nav_items
     [
-      { url: root_path, title: t(:inicio) } ,
-      { url: about_path, title: t(:sobre_link) } ,
-      { url: contact_path, title: t(:contato) } ,
-      { url: blogs_path, title: t(:blogs) } ,
-      { url: portfolios_path, title: t(:portfolio) } ,
-      { url: tech_news_path, title: t(:noticias) }
+      { url: root_path, title: t('navbar.home') } ,
+      { url: about_path, title: t('navbar.about_me') } ,
+      { url: contact_path, title: t('navbar.contact') } ,
+      { url: blogs_path, title: t('navbar.blogs') } ,
+      { url: portfolios_path, title: t('navbar.portfolio') } ,
+      { url: tech_news_path, title: t('navbar.tech_news') }
     ]
   end
 
@@ -50,7 +59,13 @@ module ApplicationHelper
 
     if alert
       alert_generator(alert)
-    end
+    endree to #{link_to 'contact me', contact_path}."
+    content_tag(:div, greeting.html_safe, class: styles)
+  end
+end
+
+def copyright_generator
+  DevcampViewTool::Renderer.copyright('Juliano Marques', '
   end
 
   def alert_generator(msg)
