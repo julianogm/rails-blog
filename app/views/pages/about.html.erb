@@ -1,7 +1,7 @@
 <div class="app-card-container">
   <div class="card">
     <div class="h3 text-center">
-      About Me
+      <%= t('home.about_me.title') %>
     <hr>
     </div>
 
@@ -25,7 +25,7 @@
       </div>
 
       <div class="col-md-8">
-        <p>I'll fill this later</p>
+        <p><%= t('home.about_me.description')%></p>
 
         <p>
           <button
@@ -36,7 +36,7 @@
             aria-expanded="false"
             aria-controls="jobHistory"
           >
-            Job history
+            <%= t('home.about_me.job_history') %>
           </button>
 
           <button
@@ -47,31 +47,31 @@
             aria-expanded="false"
             aria-controls="education"
           >
-            Education
+            <%= t('home.about_me.education') %>
           </button>
         </p>
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card-body border">
-              Job 1
+              <%= t('home.about_me.job_1') %>
             </div>
             <div class="card-body border">
-              Job 2
+              <%= t('home.about_me.job_2') %>
             </div>
             <div class="card-body border">
-              Job 3
+              <%= t('home.about_me.job_3') %>
             </div>
           </div>
 
           <div class="collapse" id="education">
             <div class="card-body border">
-              Job 1
+              <%= t('home.about_me.edu_1') %>
             </div>
             <div class="card-body border">
-              Job 2
+              <%= t('home.about_me.edu_2') %>
             </div>
             <div class="card-body border">
-              Job 3
+              <%= t('home.about_me.edu_3') %>
             </div>
           </div>
         </p>

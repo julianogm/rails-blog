@@ -42,9 +42,19 @@ en:
     logout:     Logout
 
   home:
-    title:       "Greetings"
-    description: "Description"
-    about_me:    "About Me"
-    contact:     "Contact Me"
+    title:         "Greetings"
+    description:   "Description"
+    about_me:
+      title:       "About Me"
+      description: "Description"
+      job_history: "Job History"
+      education:   "Education"
+      job_1:       "Job 1"
+      job_2:       "Job 2"
+      job_3:       "Job 3"
+      edu_1:       "School 1"
+      edu_2:       "School 2"
+      edu_3:       "School 3"
+    contact:       "Contact Me"
     dev_news:
-      title:    "Tech News"
+      title:       "Tech News"

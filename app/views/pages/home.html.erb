@@ -1,7 +1,7 @@
 <main role="main" class="inner cover">
-  <h1 class="cover-heading">This is the home page</h1>
-  <p class="lead">I'll fill this with useful information</p>
+  <h1 class="cover-heading"><%= t('home.title') %></h1>
+  <p class="lead"><%= t('home.description') %></p>
   <p class="lead">
-    <%= link_to "About Me", about_path, class: "btn btn-lg btn-secondary" %>
+    <%= link_to t('home.about_me.title'), about_path, class: "btn btn-secondary" %>
   </p>
 </main>

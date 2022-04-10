@@ -11,9 +11,19 @@ pt-BR:
     logout:    "Sair"
 
   home:
-    title:       "Saudacoes"
-    description: "Breve descricao"
-    about_me:    "Sobre Mim"
+    title:       "Saudações"
+    description: "Breve descrição"
+    about_me:
+      title:       "Sobre Mim"
+      description: "Breve descrição"
+      job_history: "Últimos empregos"
+      education:   "Educação"
+      job_1:       "Emprego 1"
+      job_2:       "Emprego 2"
+      job_3:       "Emprego 3"
+      edu_1:       "Estudo 1"
+      edu_2:       "Estudo 2"
+      edu_3:       "Estudo 3"
     contact:     "Entre em Contato"
     dev_news:
-      title:    "Novidades Dev"
+      title:     "Novidades Dev"
