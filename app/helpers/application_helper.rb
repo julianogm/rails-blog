@@ -59,13 +59,7 @@ module ApplicationHelper
 
     if alert
       alert_generator(alert)
-    endree to #{link_to 'contact me', contact_path}."
-    content_tag(:div, greeting.html_safe, class: styles)
-  end
-end
-
-def copyright_generator
-  DevcampViewTool::Renderer.copyright('Juliano Marques', '
+    end
   end
 
   def alert_generator(msg)
