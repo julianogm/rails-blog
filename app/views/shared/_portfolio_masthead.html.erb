@@ -1,10 +1,10 @@
 <section class="jumbotron text-center">
   <div class="container">
-    <h1>My Portfolio</h1>
-    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+    <h1><%= t('portfolios.title') %></h1>
+    <p class="lead text-muted"><%= t('portfolios.description') %></p>
     <p>
-      <%= link_to 'More about me', about_path, class: 'btn btn-primary my-2' %>
-      <%= link_to 'My blog', blogs_path, class: 'btn btn-primary my-2' %>
+      <%= link_to t('portfolios.more_about'), about_path, class: 'btn btn-primary my-2' %>
+      <%= link_to t('portfolios.my_blog'), blogs_path, class: 'btn btn-primary my-2' %>
     </p>
   </div>
 </section>

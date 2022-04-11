@@ -1,0 +1,17 @@
+en:
+  portfolios:
+    navbar:
+      navigate:  "Navigate"
+      about:
+        title:   "About author"
+        description: "About author Description"
+    title:       "My Portfolio"
+    description: "Something short and leading about the collection below—its contents, the creator, etc. "
+    more_about:  "More about me"
+    my_blog:    "My blog"
+    footer:
+      back_top: "Back to Top"
+      view_all: "View All Portfolio Itens"
+  portfolio_item:
+    technologies: "Technologies Used"
+    edit:  "Edit Item"

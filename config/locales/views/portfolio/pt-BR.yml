@@ -1,0 +1,17 @@
+pt-BR:
+  portfolios:
+    navbar:
+      navigate:  "Navegar"
+      about:
+        title:   "Sobre o autor"
+        description: "Descrição sobre o autor"
+    title:       "Meu Portfólio"
+    description: "Uma descrição para atrair a atenção do usuário, que seja curta e simples, mas não o suficiente para ser ignorado"
+    more_about:  "Mais sobre mim"
+    my_blog:    "Meu blog"
+    footer:
+      back_top: "Voltar ao Topo"
+      view_all: "Visualizar Todos os Itens"
+  portfolio_item:
+    technologies: "Tecnologias Utilizadas"
+    edit:  "Editar Item"
