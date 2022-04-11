@@ -11,6 +11,7 @@ pt-BR:
     footer:       "Voltar ao Topo"
   blog:
     published:  "Publicado há %{days}"
+    home:        "Início"
   comment:
     published:  "Publicado há %{days}"
     post:       "Enviar"
