@@ -6,8 +6,8 @@ pt-BR:
     blogs:     "Blogs"
     portfolio: "Portfólio"
     tech_news: "Novidades"
-    login:     "Entrar"
-    register:  "Registrar-se"
+    login:     "Login"
+    register:  "Inscrever-se"
     logout:    "Sair"
   footer:
     copyright:  "Todos os direitos reservados"
