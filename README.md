@@ -13,17 +13,17 @@ A versão mais recente está disponível [aqui](https://jmrailsblog.herokuapp.co
 Algumas das funcionalidades implementadas são:
 - Layout responsivo.
 - Integração com AWS S3 para armazenamento de imagens de portfolio.
-- Drag-and-drop para os elementos de portfolio.
+- Drag-and-drop para os elementos de portfolio (para administrador).
 - Comentários em tempo real para os elementos de blog.
 - Integração com api do Twitter.
 - Video no background (atualmente desativado).
+- Internacionalização
 
 ---
 
 Implementações futuras:
 - Testes unitários
 - Login via Oauth2
-- Internacionalização
 
 ---
 
