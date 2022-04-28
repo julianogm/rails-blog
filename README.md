@@ -26,5 +26,3 @@ Implementações futuras:
 - Login via Oauth2
 
 ---
-
-Essa aplicação foi baseada no que é ensinado [neste curso](https://www.udemy.com/course/professional-rails-5-development-course/), e foi adaptada para rails 6 conforme a necessidade.
