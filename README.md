@@ -6,7 +6,7 @@ Desenvolvida com:
   - PostgreSql 13.5
   - Bootstrap 5.1
 
-A versão mais recente está disponível [aqui](https://jmrailsblog.herokuapp.com). Brevemente todos os dados estarão preenchidos.
+A versão mais recente está disponível [aqui](https://jmrailsblog.herokuapp.com).
 
 ---
 
