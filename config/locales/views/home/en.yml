@@ -32,16 +32,19 @@
 en:
   home:
     title:         "Greetings"
-    description:   "Description"
+    description:   "Here you will find information about me and my contact. There is also a portfolio with some applications that I have developed."
     about_me:
       title:       "About Me"
-      description: "Description"
+      description: "Before going to university, I worked for a bus company. I'm currently getting a bachelor degree in computer science and working with automated tests and web development.
+                    I also had experience teaching. I'm looking to increase my knowledge in APIs, Ruby, Rails, tests.
+                    I intend to learn C#, Rust, Elixir and Flutter.
+                    I have interest in algorithms, especially in graphs."
       job_history: "Job History"
       education:   "Education"
-      job_1:       "Job 1"
-      job_2:       "Job 2"
+      job_1:       "Junior Developer Analyst | TCS Brazil | Current"
+      job_2:       "Web Development Intern | STI UFF | Current"
       job_3:       "Job 3"
-      edu_1:       "School 1"
+      edu_1:       "Bachelor's Degree in Computer Science | UFF | Studying"
       edu_2:       "School 2"
       edu_3:       "School 3"
     contact:       "Contact Me"

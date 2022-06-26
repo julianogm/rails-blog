@@ -4,9 +4,13 @@ en:
       navigate:  "Navigate"
       about:
         title:   "About author"
-        description: "About author Description"
+        description: "Frequently use: Ruby, Rails, Rspec, Git, HTML, CSS, SQL.
+        Other tools I use less frequently: Javascript, Sidekiq, Rabbitmq, Selenium, Bootstrap.
+        I'm looking to increase my knowledge in APIs, Ruby, Rails, tests.
+        I intend to learn C#, Rust, Elixir and Flutter.
+        I have interest in algorithms, especially in graphs."
     title:       "My Portfolio"
-    description: "Something short and leading about the collection below—its contents, the creator, etc. "
+    description: "Some applications developed by me. Click on a photo to see more details."
     more_about:  "More about me"
     my_blog:    "My blog"
     footer:

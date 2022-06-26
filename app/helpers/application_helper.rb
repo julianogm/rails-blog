@@ -36,7 +36,7 @@ module ApplicationHelper
       { url: contact_path, title: t('navbar.contact') } ,
       { url: blogs_path, title: t('navbar.blogs') } ,
       { url: portfolios_path, title: t('navbar.portfolio') } ,
-      { url: tech_news_path, title: t('navbar.tech_news') }
+      #{ url: tech_news_path, title: t('navbar.tech_news') }
     ]
   end
 
