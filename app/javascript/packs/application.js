@@ -12,4 +12,3 @@ require("turbolinks").start()
 require("channels")
 
 import '../js/bootstrap_js_files'
-import '../js/portfolios'

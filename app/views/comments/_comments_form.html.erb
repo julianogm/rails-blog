@@ -1,7 +1,8 @@
+<hr>
 <% unless current_user.is_a? GuestUser %>
   <%= form_for @comment, url: '#' do |f| %>
     <div class="form-group">
-      <%= f.text_area :content, class:"form-control" %>
+      <%= f.text_area :content, class:"form-control", placeholder: t('comment.placeholder') %>
     </div>
 
     <%= f.submit t('comment.post'), class: 'btn btn-primary mt-1 mb-2' %>

@@ -6,7 +6,7 @@ module DefaultPageContentConcern
     end
 
     def set_pages_defaults
-        @page_title = "Portfolio | My Portfolio"
-        @seo_keywords = "Juliano Marques portfolio"
+        @page_title = "Blog | My Blog"
+        @seo_keywords = "Juliano Marques Blog"
     end
 end

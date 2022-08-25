@@ -26,16 +26,12 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright('Juliano Marques', t('footer.copyright'))
+    "&copy; #{Time.now.year} | <b>Juliano Marques</b>".html_safe
   end
 
   def nav_items
     [
-      { url: root_path, title: t('navbar.home') } ,
-      { url: about_path, title: t('navbar.about_me') } ,
-      { url: contact_path, title: t('navbar.contact') } ,
-      { url: blogs_path, title: t('navbar.blogs') } ,
-      { url: portfolios_path, title: t('navbar.portfolio') } ,
+      #{ url: blogs_path, title: t('navbar.blogs') } ,
       #{ url: tech_news_path, title: t('navbar.tech_news') }
     ]
   end
@@ -63,6 +59,6 @@ module ApplicationHelper
   end
 
   def alert_generator(msg)
-    js add_gritter(msg, :title => "Juliano Portfolio", :stick => false, :class_name => "custom-gritter")
+    js add_gritter(msg, :title => "Juliano Blog", :stick => false, :class_name => "custom-gritter")
   end
 end
