@@ -15,17 +15,17 @@
   </head>
 
   <body>
-    <%= render 'blog_nav' %>
-    <%= render 'blog_masthead' %>
+    <%= render 'blogs/blog_nav' %>
+    <%= render 'blogs/blog_masthead' %>
 
     <div class="container">
       <div class="row">
         <%= yield %>
-        <%= render 'blog_sidebar' %>
+        <%= render 'blogs/blog_sidebar' %>
       </div>
     </div>
 
-    <%= render 'blog_footer' %>
+    <%= render 'blogs/blog_footer' %>
     <%= alerts %>
   </body>
 </html>

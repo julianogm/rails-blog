@@ -18,36 +18,8 @@ module ApplicationHelper
     </a>".html_safe
   end
 
-  def source_helper(styles)
-    if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]}. Please feel free to #{link_to 'contact me', contact_path}."
-      content_tag(:div, greeting.html_safe, class: styles)
-    end
-  end
-
   def copyright_generator
     "&copy; #{Time.now.year} | <b>Juliano Marques</b>".html_safe
-  end
-
-  def nav_items
-    [
-      #{ url: blogs_path, title: t('navbar.blogs') } ,
-      #{ url: tech_news_path, title: t('navbar.tech_news') }
-    ]
-  end
-
-  def nav_helper style, tag_type
-    nav_links = ''
-
-    nav_items.each do |item|
-      nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
-    end
-
-    nav_links.html_safe
-  end
-
-  def active? path
-    "active" if current_page? path
   end
 
   def alerts

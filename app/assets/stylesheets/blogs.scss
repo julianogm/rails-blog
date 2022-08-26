@@ -8,11 +8,6 @@
 a {
   text-decoration: none;
 }
-
-.blog-header {
-    line-height: 1;
-    border-bottom: 1px solid #e5e5e5;
-}
   
 .blog-header-logo {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
@@ -121,13 +116,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .custom-gritter {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .blogcrumb > a {
   font-size: 1.25em;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 0px 0px;
 }

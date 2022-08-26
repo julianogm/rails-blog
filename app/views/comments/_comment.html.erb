@@ -1,23 +1,18 @@
-<div class="comment-card mt-2">
-  <div class="card mt-1">
-    <div class="card-body">
-      <div class="row ">
-        <div class="col-sm-2 d-flex justify-content-center">
-          <%= gravatar_helper(comment.user) %>
-        </div>
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm-1">
+        <%= gravatar_helper(comment.user) %>
+      </div>
 
-        <div class="col-sm-9">
-          <div>
-            <%= comment.content %>
-          </div>
-          <div class="small fst-italic">
-            <%= comment.user.name %> -
-            <%= t('comment.published', 
-                  days: distance_of_time_in_words(comment.created_at, Time.now)) %>
-          </div>
+      <div class="col-sm-11">
+        <div>
+          <%= comment.content %>
         </div>
-
-        <div class="col-sm-1">
+        <div class="small fst-italic">
+          <%= comment.user.name %> -
+          <%= t('comment.published', 
+                days: distance_of_time_in_words(comment.created_at, Time.now)) %>
         </div>
       </div>
     </div>

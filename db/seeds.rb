@@ -36,31 +36,3 @@ puts "3 topics created"
 	)
 end
 puts "15 blogs created"
-
-4.times do |i|
-	Skill.create!(
-		title: "Skill #{i}" ,
-		percent_utilized: rand(1..100)
-	)
-end
-puts "4 skills created"
-
-
-10.times do |i|
-	Portfolio.create!(
-		title: "Portfolio #{i}",
-		subtitle: "Ruby on Rails",
-		body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		main_image: "https://via.placeholder.com/600x400?text=Rails+Blog" ,
-		thumb_image: "https://via.placeholder.com/300x150?text=Rails+Blog"
-	)
-end
-puts "10 portfolios created"
-
-3.times do |i|
-	Portfolio.last.technologies.create!(
-		name: "Technolony #{i}",
-		portfolio_id: rand(1..10)
-	)
-end
-puts "3 technologies created"
